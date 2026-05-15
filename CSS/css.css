@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 35px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,.05);
+    border-bottom: 1px solid #f0f0f0;
+}
+
+h1 {
+    color: #444;
+    font-size: 34px;
+    letter-spacing: 2px;
+}
+
+/* GRID PRODUCTOS */
+.productos {
+    display: grid;
+
+    /* máximo 4 por fila */
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 35px;
+    padding: 50px;
+    max-width: 1700px;
+    margin: auto;
+}
+
+/* TARJETAS */
+.card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .35s;
+    box-shadow: 0 8px 20px rgba(0,0,0,.06);
+    border: 1px solid #f3f3f3;
+}
+
+/* Hover elegante */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(0,0,0,.12);
+}
+
+/* IMÁGENES MÁS GRANDES */
+.card img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+/* TEXTO */
+.info {
+    padding: 25px;
+    text-align: center;
+}
+
+.info h3 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.precio {
+    color: #888;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* TABLET */
+@media (max-width: 1200px) {
+    .productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* CELULAR */
+@media (max-width: 768px) {
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .card img {
+        height: 260px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
