@@ -3,8 +3,8 @@ const numeroWhatsApp = "50683362236";
 const productos = [
     { nombre: "Arete 1", precio: "₡4000", img: "Img/image1.png", stock: 1 },
     { nombre: "Arete 2", precio: "₡2500", img: "Img/image2.png", stock: 1 },
-    { nombre: "Arete 3", precio: "₡2500", img: "Img/image3.png", stock: 0 }, // Mostrará Stock: 0 en la pantalla y bloqueará clic
-    { nombre: "Arete 4", precio: "₡2500", img: "Img/image4.png", stock: 0 },
+    { nombre: "Arete 3", precio: "₡2500", img: "Img/image3.png", stock: 1 }, // Mostrará Stock: 0 en la pantalla y bloqueará clic
+    { nombre: "Arete 4", precio: "₡2500", img: "Img/image4.png", stock: 1 },
     { nombre: "Arete 5", precio: "₡2500", img: "Img/image5.png", stock: 1 },
     { nombre: "Arete 6", precio: "₡2500", img: "Img/image6.png", stock: 1 },
     { nombre: "Arete 7", precio: "₡3000", img: "Img/image7.png", stock: 1 },
