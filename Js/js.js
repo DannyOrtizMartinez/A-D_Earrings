@@ -1,6 +1,5 @@
 const numeroWhatsApp = "50683362236";
 
-// Aquí mueves el número de stock manualmente de cada arete
 const productos = [
     { nombre: "Arete 1", precio: "₡4000", img: "Img/image1.png", stock: 1 },
     { nombre: "Arete 2", precio: "₡2500", img: "Img/image2.png", stock: 1 },
@@ -16,7 +15,7 @@ const productos = [
 ];
 
 const contenedor = document.getElementById("productos");
-contenedor.innerHTML = ""; // Limpieza de seguridad
+contenedor.innerHTML = ""; 
 
 productos.forEach(producto => {
     const card = document.createElement("div");
@@ -24,12 +23,10 @@ productos.forEach(producto => {
 
     const disponible = producto.stock >= 1;
 
-    // Si el stock es 0, desactivamos visualmente la tarjeta
     if (!disponible) {
         card.classList.add("deshabilitado");
     }
 
-    // Estructura HTML dinámica que inyecta el stock debajo del precio en tiempo real
     card.innerHTML = `
         <img src="${producto.img}">
         <div class="info">
@@ -41,10 +38,9 @@ productos.forEach(producto => {
         </div>
     `;
 
-    // Acción al dar clic
     card.addEventListener("click", () => {
         if (producto.stock < 1) {
-            return; // Bloqueo total si el stock es 0
+            return; 
         }
 
         const mensaje = `Hola, me interesa comprar ${producto.nombre} por ${producto.precio}`;
