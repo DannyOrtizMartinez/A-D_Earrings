@@ -8,7 +8,7 @@ const productos = [
     { nombre: "Arete 5", precio: "₡2500", img: "Img/image5.png", stock: 1 },
     { nombre: "Arete 6", precio: "₡2500", img: "Img/image6.png", stock: 0 },
     { nombre: "Arete 7", precio: "₡3000", img: "Img/image7.png", stock: 1 },
-    { nombre: "Arete 8", precio: "₡3000", img: "Img/image8.png", stock: 1 },
+    { nombre: "Arete 8", precio: "₡3000", img: "Img/image8.png", stock: 0 },
     { nombre: "Arete 9", precio: "₡2500", img: "Img/image9.png", stock: 1 },
     { nombre: "Arete 10", precio: "₡3000", img: "Img/image10.png", stock: 1 },
     { nombre: "Arete 11", precio: "₡2500", img: "Img/image11.png", stock: 1 }
